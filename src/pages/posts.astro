@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import PostList from '../components/blog/PostList.astro'
+const blog = await getCollection("blog")
+import Main from '../components/blog/Main.astro'
+import H1 from '../components/blog/H1.astro'
+import ShareBtn from '../components/ShareBtn.astro'
+---
+<Layout title="Maqolalar">
+    <Main>
+        <H1 text="Bloglar" />
+          <ShareBtn/>
+        <div class="mb-32">
+            <PostList blog={blog} />
+        </div>
+
+    </Main>
+</Layout>
+
+

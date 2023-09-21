@@ -1,0 +1,20 @@
+<div class="main-post prose prose-2xl overflow-visible relative mb-20 text-gray-800 dark:text-white dark:prose-h2:text-white dark:prose-code:text-white dark:prose-headings:text-white dark:prose-blockquote:text-white">
+    <slot />
+</div>
+
+<style lang="css">
+.main-post{
+    padding-top:90px; 
+    width:calc(100% - 250px); 
+    margin-left: 400px;
+} 
+
+@media screen and (max-width:750px){
+    .main-post{
+    padding-top:90px; 
+    width:80%;
+    margin: 10px 10%; 
+}   
+    
+}
+</style>

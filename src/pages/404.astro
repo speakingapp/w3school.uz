@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<style>
+h1{
+color:blue;
+font-size:50px;
+font-weight:bolder
+}
+
+.wrap{
+display:flex;
+flex-direction:column;
+justify-content:center;
+text-align:center;
+align-items:center;
+height:90vh;
+width:100%
+}
+
+button{
+padding:10px 25px;
+border-radius:8px;
+background:dodgerblue;
+color:white;
+border:1px solid dodgerblue;
+cursor:pointer;
+font-size:18px
+}
+</style>
+
+<Layout title="404 Not Found">
+<div class="wrap">
+<h1>Oops, 404 Not Found</h1>
+<button class="back" onclick="window.location.href='/'">Back Home</button>
+</div>
+
+</Layout>

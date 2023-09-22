@@ -1,0 +1,71 @@
+---
+import Menu from '../nav/Menu.astro'
+import ModeButton from '../nav/ModeButton.astro'
+import Logo from '../nav/Logo.astro'
+import TutorialsMenu from './TutorialsMenu.astro';
+---
+<nav class="dark:bg-gray-800 w-full bg-white   flex items-center justify-between">
+<div class="flex items-center">
+<div>
+<Logo/>
+<svg id="open-sidebar-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="toggle-menu-icon w-6 h-6 dark:text-white text-gray-800 mx-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+</div>
+        
+    <Menu/> 
+</div>
+
+
+<div class="flex justify-center items-center">
+
+<ModeButton/>
+</div>
+
+</nav>
+
+<TutorialsMenu/>
+
+
+<style>
+nav{
+    height: 60px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 3;
+
+}
+
+
+.toggle-menu-icon{
+display: none;
+
+}
+
+
+@media screen and (max-width:750px) {
+.toggle-menu-icon{
+display: flex;
+}
+}
+</style>
+
+
+
+<script is:inline>
+
+$("#open-sidebar-menu").click(()=>{
+$(".tutorial-sidebar").toggle()
+})
+
+    $("#primary").click(()=>{
+    $(".primary-menu").toggle()
+})
+
+</script>
+
+
+
+
+

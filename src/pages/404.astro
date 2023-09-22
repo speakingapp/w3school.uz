@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<style>
+h1{
+color:blue;
+font-size:50px;
+font-weight:bolder
+}
+
+.wrap{
+display:flex;
+flex-direction:column;
+justify-content:center;
+text-align:center;
+align-items:center;
+height:100%;
+width:100%;
+position: absolute;
+top:0%;
+left:0;
+tranform: translate(-50%, 0)
+}
+
+button{
+padding:10px 25px;
+border-radius:8px;
+background:#2563eb;
+color:white;
+border:1px solid #2563eb;
+cursor:pointer;
+font-size:18px
+}
+</style>
+
+<Layout title="404 Not Found">
+<div class="wrap">
+<img src="/img/404.svg" width="400px" alt="404 image">
+<h1> 404 Sahifa Topilmadi</h1>
+<button class="back" onclick="window.location.href='/'">Ortga Qaytish</button>
+</div>
+
+</Layout>

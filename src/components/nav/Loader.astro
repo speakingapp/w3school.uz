@@ -17,7 +17,7 @@
         height: 100%;
         left:0;
         top:0;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -55,11 +55,16 @@
   if(isShowing==="false" && window.history.length>1){
     document.querySelector(".splash-screen").style.display="none"
    }
-
-        setTimeout(()=>{
+   else{
+   document.querySelector(".splash-screen").style.display="flex"
+    setTimeout(()=>{
         document.querySelector(".splash-screen").style.display="none"
         localStorage.setItem('loader', "false")
-    }, 5000)
+    }, 3000)
+
+   }
+
+        
         
    
 

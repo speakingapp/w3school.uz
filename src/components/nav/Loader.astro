@@ -52,7 +52,7 @@
 <script is:inline>
   var isShowing = localStorage.getItem('loader')
 
-  if(isShowing==="false" && window.history.length>1){
+  if(isShowing==="false" || window.history.length>1){
     document.querySelector(".splash-screen").style.display="none"
    }
    else{

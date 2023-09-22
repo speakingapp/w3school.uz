@@ -21,12 +21,9 @@
     
     
     // Share must be triggered by "user activation"
-    btn.addEventListener("click", async () => {
-      try {
-        await navigator.share(shareData);
-      } catch (err) {
-       console.log(`Error: ${err}`);
-      }
+    btn.addEventListener("click",  () => {
+         navigator.share(shareData);
+  
     });
     
 

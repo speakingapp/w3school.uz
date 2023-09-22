@@ -1,32 +1,13 @@
 <p class="dark:text-gray-300 text-zinc-900 text-2xl mb-24 max-sm:mb-14 flex items-center
         ">
             Do'stlaringiz bilan ulashing 
-            <svg id="share" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-emerald-500 dark:text-emerald-400 mx-2 w-9 h-9 cursor-pointer">
-                <path fill-rule="evenodd" d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z" clip-rule="evenodd" />
-              </svg>
-              
-             <a id="t-share" href="https://t.me/share/url?url=https://w3school.uz&text=Bepul%20Dasturlash%20kurslari" target="_blank"><svg  class="text-blue-500  w-9 h-9 cursor-pointer" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32"><path fill="currentColor" d="m29.919 6.163l-4.225 19.925c-.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744l-3.106 2.988c-.344.344-.631.631-1.294.631l.463-6.556L24.919 8.72c.519-.462-.113-.719-.806-.256l-14.75 9.288l-6.35-1.988c-1.381-.431-1.406-1.381.288-2.044l24.837-9.569c1.15-.431 2.156.256 1.781 2.013z"/></svg></a>
- </p>
+            
+    <div class="shareon" data-url="window.location.href">
+    <a class="copy-url"></a>
+    <a class="facebook" data-title="W3Schooluz platformasi orqali bepul dasturlashni o'rganing..."></a>
+    <a class="telegram" data-title="W3Schooluz platformasi orqali bepul dasturlashni o'rganing..."></a>
+    <a class="pinterest"></a>
+</div>
 
+            /p>
 
-<script is:inline>
-
-    const shareData = {
-      title: "MDN",
-      text: "Learn web development on MDN!",
-      url: "https://developer.mozilla.org",
-    };
-    
-    const btn = document.querySelector("#share");
-    
-    
-    // Share must be triggered by "user activation"
-    btn.addEventListener("click",  () => {
-         navigator.share(shareData);
-  
-    });
-    
-
-    
-      
-    </script>

@@ -13,6 +13,5 @@ export default defineConfig({
     }
   },
   integrations: [tailwind(), mdx()],
-  output: "hybrid",
   adapter: vercel()
 });
